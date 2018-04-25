@@ -1,17 +1,17 @@
 {
-  "name": "teams-for-linux",
-  "version": "0.0.8",
-  "description": "Unofficial client for Microsoft Teams for Linux",
-  "homepage": "https://github.com/ivelkov/teams-for-linux",
+  "name": "outlook-for-linux",
+  "version": "0.0.1",
+  "description": "Unofficial client for Microsoft Outlook for Linux",
+  "homepage": "https://github.com/derricw/outlook-for-linux",
   "keywords": [
-    "Teams",
-    "Microsoft Teams"
+    "Outlook",
+    "Microsoft Outlook"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/ivelkov/teams-for-linux"
+    "url": "git+ssh://github.com/derricw/outlook-for-linux"
   },
-  "author": "Ivelin Velkov <ivelin.velkov@gmail.com>",
+  "author": "Derric Williams <derricw@gmail.com>",
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "start": "electron ./app",
@@ -24,18 +24,18 @@
     "electron-builder": "^20.8.2"
   },
   "build": {
-    "appId": "teams-for-linux",
+    "appId": "outlook-for-linux",
     "asar": false,
     "linux": {
-      "category": "Network;Chat",
+      "category": "Network;Email",
       "packageCategory": "net",
-      "executableName": "teams",
-      "synopsis": "Microsoft Teams for Linux",
-      "description": "Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App\n and wraps it as a standalone application using Electron.",
+      "executableName": "outlook",
+      "synopsis": "Microsoft Outlook for Linux",
+      "description": "Unofficial Microsoft Outlook client for Linux using Electron. It uses the Web App\n and wraps it as a standalone application using Electron.",
       "desktop": {
-        "Name": "Microsoft Teams for Linux",
-        "Comment": "Unofficial client for Microsoft Teams for Linux",
-        "StartupWMClass": "teams-for-linux"
+        "Name": "Microsoft Outlook for Linux",
+        "Comment": "Unofficial client for Microsoft Outlook for Linux",
+        "StartupWMClass": "outlook-for-linux"
       },
       "target": [
         "rpm",
