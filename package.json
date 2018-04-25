@@ -1,0 +1,49 @@
+{
+  "name": "teams-for-linux",
+  "version": "0.0.8",
+  "description": "Unofficial client for Microsoft Teams for Linux",
+  "homepage": "https://github.com/ivelkov/teams-for-linux",
+  "keywords": [
+    "Teams",
+    "Microsoft Teams"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/ivelkov/teams-for-linux"
+  },
+  "author": "Ivelin Velkov <ivelin.velkov@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "start": "electron ./app",
+    "start-debug": "WEB_DEBUG=1 electron --disable-http-cache ./app",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-builder": "^20.8.2"
+  },
+  "build": {
+    "appId": "teams-for-linux",
+    "asar": false,
+    "linux": {
+      "category": "Network;Chat",
+      "packageCategory": "net",
+      "executableName": "teams",
+      "synopsis": "Microsoft Teams for Linux",
+      "description": "Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App\n and wraps it as a standalone application using Electron.",
+      "desktop": {
+        "Name": "Microsoft Teams for Linux",
+        "Comment": "Unofficial client for Microsoft Teams for Linux",
+        "StartupWMClass": "teams-for-linux"
+      },
+      "target": [
+        "rpm",
+        "deb",
+        "pacman",
+        "tar.gz"
+      ]
+    }
+  },
+  "dependencies": {}
+}
