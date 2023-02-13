@@ -20,8 +20,8 @@
     "dist": "build"
   },
   "devDependencies": {
-    "electron": "^18.3.7",
-    "electron-builder": "^20.43.0"
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
   },
   "build": {
     "appId": "outlook-for-linux",
