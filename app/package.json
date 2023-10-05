@@ -7,6 +7,6 @@
   "dependencies": {
     "electron-window-state": "~5.0.3",
     "open": "^6.4.0",
-    "yargs": "^17.5.1"
+    "yargs": "^17.7.2"
   }
 }
