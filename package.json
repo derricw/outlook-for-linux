@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "electron": "^22.3.25",
-    "electron-builder": "^23.6.0"
+    "electron-builder": "^24.13.3"
   },
   "build": {
     "appId": "outlook-for-linux",
